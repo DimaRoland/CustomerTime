@@ -1,0 +1,2 @@
+c:\users\dval\documents\visual studio 2015\Projects\CustomerTimesTask\ConsoleApplication1\bin\Debug\ConsoleApplication1.exe.config
+c:\users\dval\documents\visual studio 2015\Projects\CustomerTimesTask\ConsoleApplication1\obj\Debug\ConsoleApplication1.csprojResolveAssemblyReference.cache
