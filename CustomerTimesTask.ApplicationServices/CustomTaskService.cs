@@ -40,14 +40,14 @@ namespace CustomerTimesTask.ApplicationServices
             return GetCustomTask(updateCustomTask);
         }
 
-        public CustomTask AddCustomTask(int id)
+        public CustomTask AddCustomTask(CustomTask customTask)
         {
-            throw new NotImplementedException();
+            return _taskRepository.Add(customTask);
         }
 
         public void Delete(int id)
         {
-            throw new NotImplementedException();
+            _taskRepository.Delete(id);
         }
 
         #endregion methods

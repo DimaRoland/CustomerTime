@@ -1,0 +1,9 @@
+c:\users\dval\documents\visual studio 2015\Projects\CustomerTimesTask\CustomerTimesTask.Database\bin\Release\CustomerTimesTask.Database.dacpac
+c:\users\dval\documents\visual studio 2015\Projects\CustomerTimesTask\CustomerTimesTask.Database\bin\Release\CustomerTimesTask.Database.dll
+c:\users\dval\documents\visual studio 2015\Projects\CustomerTimesTask\CustomerTimesTask.Database\bin\Release\CustomerTimesTask.Database.pdb
+c:\users\dval\documents\visual studio 2015\Projects\CustomerTimesTask\CustomerTimesTask.Database\obj\Release\Model.xml
+c:\users\dval\documents\visual studio 2015\Projects\CustomerTimesTask\CustomerTimesTask.Database\obj\Release\refactor.xml
+c:\users\dval\documents\visual studio 2015\Projects\CustomerTimesTask\CustomerTimesTask.Database\obj\Release\postdeploy.sql
+c:\users\dval\documents\visual studio 2015\Projects\CustomerTimesTask\CustomerTimesTask.Database\obj\Release\predeploy.sql
+c:\users\dval\documents\visual studio 2015\Projects\CustomerTimesTask\CustomerTimesTask.Database\obj\Release\CustomerTimesTask.Database.dll
+c:\users\dval\documents\visual studio 2015\Projects\CustomerTimesTask\CustomerTimesTask.Database\obj\Release\CustomerTimesTask.Database.pdb

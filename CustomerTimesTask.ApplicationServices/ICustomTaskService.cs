@@ -11,7 +11,7 @@ namespace CustomerTimesTask.ApplicationServices
 
         CustomTask UpdateCustomTask(int id);
 
-        CustomTask AddCustomTask(int id);
+        CustomTask AddCustomTask(CustomTask customTask);
 
         void Delete(int id);
     }
