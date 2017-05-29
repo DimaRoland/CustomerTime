@@ -7,3 +7,8 @@ C:\Users\dval\Documents\Visual Studio 2015\Projects\CustomerTimesTask\CustomerTi
 C:\Users\dval\Documents\Visual Studio 2015\Projects\CustomerTimesTask\CustomerTimesTask.Database\obj\Debug\refactor.xml
 C:\Users\dval\Documents\Visual Studio 2015\Projects\CustomerTimesTask\CustomerTimesTask.Database\obj\Debug\postdeploy.sql
 C:\Users\dval\Documents\Visual Studio 2015\Projects\CustomerTimesTask\CustomerTimesTask.Database\obj\Debug\predeploy.sql
+D:\CustomerTimesTask\CustomerTimesTask.Database\bin\Debug\CustomerTimesTask.Database.dacpac
+D:\CustomerTimesTask\CustomerTimesTask.Database\bin\Debug\CustomerTimesTask.Database.dll
+D:\CustomerTimesTask\CustomerTimesTask.Database\bin\Debug\CustomerTimesTask.Database.pdb
+D:\CustomerTimesTask\CustomerTimesTask.Database\obj\Debug\CustomerTimesTask.Database.dll
+D:\CustomerTimesTask\CustomerTimesTask.Database\obj\Debug\CustomerTimesTask.Database.pdb

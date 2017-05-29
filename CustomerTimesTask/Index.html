@@ -36,7 +36,12 @@
                 <input id="Title" name="Title" type="text" />
             </div>
             <div>
-                <input type="submit" id="addd" value="Add new" style="background: lightgrey" />
+                <input type="submit" id="addd" class="text-info" value="Add new" style="background: lightgrey" />
+            </div>
+
+            <div>
+                <input id="change" name="change" type="text" />
+                <label style="background: lightgrey">Enter new name and press edit </label>
             </div>
         </form>
     </div>
@@ -50,16 +55,46 @@
     var uri = 'api/task';
     $(document).ready(function() {
         $.getJSON(uri)
-            .done(function(data) {
+            .done(function (data) {
+
                 $.each(data,
                     function (key, item) {
-                        $('<tr>', { text: formatItemTitle(item) }).appendTo($('#blogs'));
+                        $('<tr>', { text: formatItemTitle(item) }).appendTo($('#blogs'))
+                            .append('<input type="button" id="del" value="Delete" />')
+                            .on("click", "#del",
+                                function(e) {
+                                    remove(item.id);
+                                    $(this).closest('tr').remove();
+                                })
+                                .append('<input type="button" id="edit" value="Edit" />')
+                                .on("click", "#edit", 
+                                     function (e) {
+                                         $.ajax({
+                                             type: 'PUT',
+                                             url: 'api/task',
+                                             data: JSON.stringify(
+                                             {
+                                                 "id": item.id,
+                                                 "taskName": $("#change").val(),
+                                                 "isTaskStart": true,
+                                                 "isTaskEnd": false
+                                             }),
+                                             contentType: 'application/json; charset=utf-8',
+                                             dataType: "json",
+                                             async: false,
+                                             success: $(this).closest('tr').text($("#change").val())
+                                     });
+                                     });
                     });
             });
     });
 
     function formatItemTitle(item) {
         return item.taskName;
+    };
+
+    function formatItemId(item) {
+        return item.id;
     };
 
     function post() {
@@ -78,11 +113,33 @@
         });
     }
 
+    function remove(id) {
+        $.ajax({
+            type: 'DELETE',
+            url: 'api/task/' + '?'+ $.param({ id })
+        });
+    }
+
+
+    function update(id) {
+        $.ajax({
+            type: 'PUT',
+            url: 'api/task/' + '?' + $.param({ id }),
+            data: JSON.stringify(
+                {
+                    "taskName": $("#Title").val(),
+                    "isTaskStart": true,
+                    "isTaskEnd": false
+                }),
+            contentType: 'application/json; charset=utf-8',
+            dataType: "json",
+            async: false
+        });
+    }
+
     $("#addd").on("click",
         function(e) {
-
             post();
-
         });
 
     </script>

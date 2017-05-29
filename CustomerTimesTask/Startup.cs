@@ -5,7 +5,9 @@ using Autofac;
 using Autofac.Features.ResolveAnything;
 using Autofac.Integration.WebApi;
 using CustomerTimesTask.ApplicationServices;
+using CustomerTimesTask.EntityFramework;
 using CustomerTimesTask.Repositories;
+using MassTransit;
 using Newtonsoft.Json;
 using Newtonsoft.Json.Serialization;
 using Owin;
@@ -42,7 +44,6 @@ namespace CustomerTimesTask
                 routeTemplate: "api/{controller}/{id}",
                 defaults: new { id = RouteParameter.Optional }
             );
-
             configuration.DependencyResolver = new AutofacWebApiDependencyResolver(container);
         }
     }
@@ -68,8 +69,10 @@ namespace CustomerTimesTask
             builder.RegisterApiControllers(ThisAssembly);
 
             builder.RegisterType<CustomTaskService>().As<ICustomTaskService>();
-
             builder.RegisterType<CustomTaskRepository>().As<ICustomTaskRepository>();
+            builder.RegisterType<CustomerTimesTaskDbContext>()
+                .AsImplementedInterfaces()
+                .InstancePerLifetimeScope();
 
             base.Load(builder);
         }

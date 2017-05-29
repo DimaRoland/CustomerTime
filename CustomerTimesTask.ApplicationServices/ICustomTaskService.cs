@@ -9,7 +9,7 @@ namespace CustomerTimesTask.ApplicationServices
 
         CustomTask GetCustomTask(int id);
 
-        CustomTask UpdateCustomTask(int id);
+        CustomTask UpdateCustomTask(CustomTask customTask);
 
         CustomTask AddCustomTask(CustomTask customTask);
 

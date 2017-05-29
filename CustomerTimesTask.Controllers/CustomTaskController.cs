@@ -42,10 +42,10 @@ namespace CustomerTimesTask.Controllers
             return Ok(data);
         }
 
-        [HttpPut, Route("api/task/{id}")]
-        public IHttpActionResult UpdateCustomTask(int id)
+        [HttpPut, Route("api/task")]
+        public IHttpActionResult UpdateCustomTask([FromBody] CustomTask customTask)
         {
-            var model = _customTaskService.UpdateCustomTask(id);
+            var model = _customTaskService.UpdateCustomTask(customTask);
 
             return Ok(model);
         }
@@ -58,8 +58,8 @@ namespace CustomerTimesTask.Controllers
             return Ok(customTask);
         }
 
-        [HttpDelete, Route("api/task/{id}")]
-        public void DeleteCustomTask(int id)
+        [HttpDelete, Route("api/task")]
+        public void DeleteCustomTask([FromUri] int id)
         {
             _customTaskService.Delete(id);
         }

@@ -17,6 +17,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CustomerTimesTask.Applicati
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CustomerTimesTask.Controllers", "CustomerTimesTask.Controllers\CustomerTimesTask.Controllers.csproj", "{28FD2FCA-DA4C-4459-886C-7BFEA686C08E}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SubscriberMain", "SubscriberMain\SubscriberMain.csproj", "{9C7DA531-FB3B-4CE3-801A-910E35C8F48A}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -53,6 +55,10 @@ Global
 		{28FD2FCA-DA4C-4459-886C-7BFEA686C08E}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{28FD2FCA-DA4C-4459-886C-7BFEA686C08E}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{28FD2FCA-DA4C-4459-886C-7BFEA686C08E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{9C7DA531-FB3B-4CE3-801A-910E35C8F48A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9C7DA531-FB3B-4CE3-801A-910E35C8F48A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9C7DA531-FB3B-4CE3-801A-910E35C8F48A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9C7DA531-FB3B-4CE3-801A-910E35C8F48A}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

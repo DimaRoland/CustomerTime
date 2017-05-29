@@ -34,9 +34,9 @@ namespace CustomerTimesTask.ApplicationServices
             return _taskRepository.Get(id);
         }
 
-        public CustomTask UpdateCustomTask(int id)
+        public CustomTask UpdateCustomTask(CustomTask customTask)
         {
-            var updateCustomTask = _taskRepository.Update(GetCustomTask(id));
+            var updateCustomTask = _taskRepository.Update(customTask);
             return GetCustomTask(updateCustomTask);
         }
 

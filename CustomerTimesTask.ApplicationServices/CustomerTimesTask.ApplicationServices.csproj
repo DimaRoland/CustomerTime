@@ -62,10 +62,6 @@
       <HintPath>..\packages\MassTransit.2.9.0\lib\net40\MassTransit.dll</HintPath>
       <Private>True</Private>
     </Reference>
-    <Reference Include="MassTransit.Log4NetIntegration, Version=2.9.0.0, Culture=neutral, PublicKeyToken=b8e0e9f2f1e657fa, processorArchitecture=MSIL">
-      <HintPath>..\packages\MassTransit.Log4Net.2.9.0\lib\net40\MassTransit.Log4NetIntegration.dll</HintPath>
-      <Private>True</Private>
-    </Reference>
     <Reference Include="MassTransit.Transports.RabbitMq, Version=2.9.0.0, Culture=neutral, PublicKeyToken=b8e0e9f2f1e657fa, processorArchitecture=MSIL">
       <HintPath>..\packages\MassTransit.RabbitMQ.2.9.0\lib\net40\MassTransit.Transports.RabbitMq.dll</HintPath>
       <Private>True</Private>
@@ -90,16 +86,8 @@
       <HintPath>..\packages\NewId.3.0.0\lib\net452\NewId.dll</HintPath>
       <Private>True</Private>
     </Reference>
-    <Reference Include="Newtonsoft.Json, Version=4.0.2.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
-      <HintPath>..\packages\Rabbit.0.6.5\lib\Newtonsoft.Json.dll</HintPath>
-      <Private>True</Private>
-    </Reference>
     <Reference Include="NuGet.Core, Version=1.6.30117.9648, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
       <HintPath>..\packages\NuGet.Core.1.6.2\lib\net40\NuGet.Core.dll</HintPath>
-      <Private>True</Private>
-    </Reference>
-    <Reference Include="Rabbit, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
-      <HintPath>..\packages\Rabbit.0.6.5\lib\Rabbit.dll</HintPath>
       <Private>True</Private>
     </Reference>
     <Reference Include="RabbitMQ.Client, Version=4.0.0.0, Culture=neutral, PublicKeyToken=89e7d7c5feba84ce, processorArchitecture=MSIL">

@@ -15,9 +15,9 @@ namespace CustomerTimesTask.Repositories
 
         #region constructors
 
-        public CustomTaskRepository()
+        public CustomTaskRepository(CustomerTimesTaskDbContext customerTimesTaskDbContext)
         {
-            _customerTimesTaskDbContext = new CustomerTimesTaskDbContext();
+            _customerTimesTaskDbContext = customerTimesTaskDbContext;
         }
 
         #endregion constructors
