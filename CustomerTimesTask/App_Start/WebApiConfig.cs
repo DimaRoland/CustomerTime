@@ -1,10 +1,4 @@
 ﻿using System.Web.Http;
-using System.Web.Mvc;
-using Autofac;
-using Autofac.Integration.Mvc;
-using Autofac.Integration.WebApi;
-using CustomerTimesTask.ApplicationServices;
-using CustomerTimesTask.Repositories;
 
 namespace CustomerTimesTask
 {

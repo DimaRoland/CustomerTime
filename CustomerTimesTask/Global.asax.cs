@@ -4,7 +4,6 @@ using System.Web.Optimization;
 using System.Web.Routing;
 using Autofac;
 using Autofac.Integration.Mvc;
-using CustomerTimesTask.Controllers;
 
 namespace CustomerTimesTask
 {

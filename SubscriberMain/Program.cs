@@ -1,4 +1,5 @@
 ﻿using System;
+using CustomerTimesTask;
 using MassTransit;
 
 namespace SubscriberMain
@@ -12,38 +13,30 @@ namespace SubscriberMain
     {
         static void Main()
         {
-            var bus = BusInitializer.CreateBus();
-
-            bus.Start();
-
-                bus.Publish(new MyMessage { Value = "Hello, World." });
-
-                Console.ReadLine();
-        }
-    }
-
-    public class BusInitializer
-    {
-        public static IBusControl CreateBus()
-        {
-            var bus = Bus.Factory.CreateUsingRabbitMq(sbc =>
+            var bus = BusInitializer.CreateBus("SubscriberMain", x =>
             {
-                var host = sbc.Host(new Uri("rabbitmq://localhost/"), h =>
+                x.Subscribe(subs =>
                 {
-                    h.Username("guest");
-                    h.Password("guest");
-                });
-
-                sbc.ReceiveEndpoint(host, "my_queue", endpoint =>
-                {
-                    endpoint.Handler<MyMessage>(async context =>
-                    {
-                        await Console.Out.WriteLineAsync($"Received: {context.Message.Value}");
-                    });
+                    subs.Consumer<SomethingHappenedConsumer>().Permanent();
                 });
             });
 
-            return bus;
+            Console.ReadKey();
+
+            bus.Dispose();
         }
+    }
+
+    class SomethingHappenedConsumer : Consumes<SomethingHappened>.Context
+    {
+        public void Consume(IConsumeContext<SomethingHappened> message)
+        {
+            Console.Write("User" + message.Message.What);
+        }
+    }
+
+    public interface SomethingHappened
+    {
+        string What { get; }
     }
 }

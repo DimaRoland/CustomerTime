@@ -50,17 +50,12 @@
       <HintPath>..\packages\GreenPipes.1.0.9\lib\net452\GreenPipes.dll</HintPath>
       <Private>True</Private>
     </Reference>
-    <Reference Include="log4net, Version=2.0.8.0, Culture=neutral, PublicKeyToken=669e0ddf0bb1aa2a, processorArchitecture=MSIL">
-      <HintPath>..\packages\log4net.2.0.8\lib\net45-full\log4net.dll</HintPath>
-      <Private>True</Private>
+    <Reference Include="MassTransit">
+      <HintPath>C:\Users\dval\Source\Repos\MtPubSubExample\packages\MassTransit.2.9.5\lib\net40\MassTransit.dll</HintPath>
     </Reference>
-    <Reference Include="MassTransit, Version=3.5.0.0, Culture=neutral, PublicKeyToken=b8e0e9f2f1e657fa, processorArchitecture=MSIL">
-      <HintPath>..\packages\MassTransit.3.5.0\lib\net452\MassTransit.dll</HintPath>
-      <SpecificVersion>False</SpecificVersion>
+    <Reference Include="MassTransit.Log4NetIntegration, Version=3.5.0.0, Culture=neutral, PublicKeyToken=b8e0e9f2f1e657fa, processorArchitecture=MSIL">
+      <HintPath>..\packages\MassTransit.Log4Net.3.5.7\lib\net452\MassTransit.Log4NetIntegration.dll</HintPath>
       <Private>True</Private>
-    </Reference>
-    <Reference Include="MassTransit.Transports.RabbitMq">
-      <HintPath>..\..\..\..\..\Source\Repos\MtPubSubExample\packages\MassTransit.RabbitMQ.2.9.5\lib\net40\MassTransit.Transports.RabbitMq.dll</HintPath>
     </Reference>
     <Reference Include="Microsoft.Extensions.Configuration, Version=1.0.0.0, Culture=neutral, PublicKeyToken=adb9793829ddae60, processorArchitecture=MSIL">
       <HintPath>..\packages\Microsoft.Extensions.Configuration.1.0.0\lib\netstandard1.1\Microsoft.Extensions.Configuration.dll</HintPath>
@@ -154,16 +149,12 @@
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\CustomerTimesTask.ApplicationServices\CustomerTimesTask.ApplicationServices.csproj">
-      <Project>{AF36E85A-8F35-4173-A6DC-66813A08FD76}</Project>
+      <Project>{af36e85a-8f35-4173-a6dc-66813a08fd76}</Project>
       <Name>CustomerTimesTask.ApplicationServices</Name>
     </ProjectReference>
     <ProjectReference Include="..\CustomerTimesTask.DomainModel\CustomerTimesTask.DomainModel.csproj">
-      <Project>{76649873-9C7B-4718-B3AD-FFD345367492}</Project>
+      <Project>{76649873-9c7b-4718-b3ad-ffd345367492}</Project>
       <Name>CustomerTimesTask.DomainModel</Name>
-    </ProjectReference>
-    <ProjectReference Include="..\SubscriberMain\SubscriberMain.csproj">
-      <Project>{9C7DA531-FB3B-4CE3-801A-910E35C8F48A}</Project>
-      <Name>SubscriberMain</Name>
     </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

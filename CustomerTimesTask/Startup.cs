@@ -1,5 +1,4 @@
-﻿using System;
-using System.Net.Http.Formatting;
+﻿using System.Net.Http.Formatting;
 using System.Web.Http;
 using Autofac;
 using Autofac.Features.ResolveAnything;
@@ -7,7 +6,6 @@ using Autofac.Integration.WebApi;
 using CustomerTimesTask.ApplicationServices;
 using CustomerTimesTask.EntityFramework;
 using CustomerTimesTask.Repositories;
-using MassTransit;
 using Newtonsoft.Json;
 using Newtonsoft.Json.Serialization;
 using Owin;
