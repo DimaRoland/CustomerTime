@@ -163,7 +163,6 @@ D:\CustomerTimesTask\CustomerTimesTask\bin\EntityFramework.SqlServer.dll
 D:\CustomerTimesTask\CustomerTimesTask\bin\GreenPipes.dll
 D:\CustomerTimesTask\CustomerTimesTask\bin\log4net.dll
 D:\CustomerTimesTask\CustomerTimesTask\bin\Magnum.dll
-D:\CustomerTimesTask\CustomerTimesTask\bin\MassTransit.dll
 D:\CustomerTimesTask\CustomerTimesTask\bin\MassTransit.Transports.RabbitMq.dll
 D:\CustomerTimesTask\CustomerTimesTask\bin\Microsoft.AI.Agent.Intercept.dll
 D:\CustomerTimesTask\CustomerTimesTask\bin\Microsoft.AI.DependencyCollector.dll
@@ -219,8 +218,6 @@ D:\CustomerTimesTask\CustomerTimesTask\bin\Autofac.Integration.WebApi.xml
 D:\CustomerTimesTask\CustomerTimesTask\bin\GreenPipes.xml
 D:\CustomerTimesTask\CustomerTimesTask\bin\log4net.xml
 D:\CustomerTimesTask\CustomerTimesTask\bin\Magnum.xml
-D:\CustomerTimesTask\CustomerTimesTask\bin\MassTransit.pdb
-D:\CustomerTimesTask\CustomerTimesTask\bin\MassTransit.xml
 D:\CustomerTimesTask\CustomerTimesTask\bin\MassTransit.Transports.RabbitMq.pdb
 D:\CustomerTimesTask\CustomerTimesTask\bin\MassTransit.Transports.RabbitMq.xml
 D:\CustomerTimesTask\CustomerTimesTask\bin\Microsoft.AI.DependencyCollector.xml
@@ -263,3 +260,7 @@ D:\CustomerTimesTask\CustomerTimesTask\bin\System.Web.Http.Owin.xml
 D:\CustomerTimesTask\CustomerTimesTask\obj\Debug\CustomerTimesTask.Host.csprojResolveAssemblyReference.cache
 D:\CustomerTimesTask\CustomerTimesTask\obj\Debug\CustomerTimesTask.dll
 D:\CustomerTimesTask\CustomerTimesTask\obj\Debug\CustomerTimesTask.pdb
+D:\CustomerTimesTask\CustomerTimesTask\bin\SubscriberMain.exe
+D:\CustomerTimesTask\CustomerTimesTask\bin\MassTransit.RabbitMqTransport.dll
+D:\CustomerTimesTask\CustomerTimesTask\bin\SubscriberMain.pdb
+D:\CustomerTimesTask\CustomerTimesTask\bin\MassTransit.RabbitMqTransport.xml

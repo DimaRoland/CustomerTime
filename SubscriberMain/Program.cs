@@ -12,6 +12,20 @@ namespace SubscriberMain
     {
         static void Main()
         {
+            var bus = BusInitializer.CreateBus();
+
+            bus.Start();
+
+                bus.Publish(new MyMessage { Value = "Hello, World." });
+
+                Console.ReadLine();
+        }
+    }
+
+    public class BusInitializer
+    {
+        public static IBusControl CreateBus()
+        {
             var bus = Bus.Factory.CreateUsingRabbitMq(sbc =>
             {
                 var host = sbc.Host(new Uri("rabbitmq://localhost/"), h =>
@@ -29,11 +43,7 @@ namespace SubscriberMain
                 });
             });
 
-            bus.Start();
-
-                bus.Publish(new MyMessage { Value = "Hello, World." });
-
-                Console.ReadLine();
+            return bus;
         }
     }
 }

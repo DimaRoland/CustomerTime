@@ -109,11 +109,8 @@ D:\CustomerTimesTask\CustomerTimesTask.Controllers\bin\Debug\Autofac.Integration
 D:\CustomerTimesTask\CustomerTimesTask.Controllers\bin\Debug\Autofac.Integration.WebApi.xml
 D:\CustomerTimesTask\CustomerTimesTask.Controllers\bin\Debug\GreenPipes.xml
 D:\CustomerTimesTask\CustomerTimesTask.Controllers\bin\Debug\log4net.xml
-D:\CustomerTimesTask\CustomerTimesTask.Controllers\bin\Debug\MassTransit.pdb
 D:\CustomerTimesTask\CustomerTimesTask.Controllers\bin\Debug\MassTransit.xml
 D:\CustomerTimesTask\CustomerTimesTask.Controllers\bin\Debug\MassTransit.RabbitMqTransport.xml
-D:\CustomerTimesTask\CustomerTimesTask.Controllers\bin\Debug\MassTransit.Transports.RabbitMq.pdb
-D:\CustomerTimesTask\CustomerTimesTask.Controllers\bin\Debug\MassTransit.Transports.RabbitMq.xml
 D:\CustomerTimesTask\CustomerTimesTask.Controllers\bin\Debug\Microsoft.Extensions.Configuration.xml
 D:\CustomerTimesTask\CustomerTimesTask.Controllers\bin\Debug\Microsoft.Extensions.Configuration.Abstractions.xml
 D:\CustomerTimesTask\CustomerTimesTask.Controllers\bin\Debug\Microsoft.Extensions.Primitives.xml
@@ -135,3 +132,6 @@ D:\CustomerTimesTask\CustomerTimesTask.Controllers\bin\Debug\EntityFramework.xml
 D:\CustomerTimesTask\CustomerTimesTask.Controllers\obj\Debug\CustomerTimesTask.Controllers.csprojResolveAssemblyReference.cache
 D:\CustomerTimesTask\CustomerTimesTask.Controllers\obj\Debug\CustomerTimesTask.Controllers.dll
 D:\CustomerTimesTask\CustomerTimesTask.Controllers\obj\Debug\CustomerTimesTask.Controllers.pdb
+D:\CustomerTimesTask\CustomerTimesTask.Controllers\bin\Debug\SubscriberMain.exe
+D:\CustomerTimesTask\CustomerTimesTask.Controllers\bin\Debug\SubscriberMain.pdb
+D:\CustomerTimesTask\CustomerTimesTask.Controllers\bin\Debug\MassTransit.dll

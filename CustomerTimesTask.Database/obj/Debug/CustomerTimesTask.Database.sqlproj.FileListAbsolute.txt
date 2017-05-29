@@ -12,3 +12,7 @@ D:\CustomerTimesTask\CustomerTimesTask.Database\bin\Debug\CustomerTimesTask.Data
 D:\CustomerTimesTask\CustomerTimesTask.Database\bin\Debug\CustomerTimesTask.Database.pdb
 D:\CustomerTimesTask\CustomerTimesTask.Database\obj\Debug\CustomerTimesTask.Database.dll
 D:\CustomerTimesTask\CustomerTimesTask.Database\obj\Debug\CustomerTimesTask.Database.pdb
+D:\CustomerTimesTask\CustomerTimesTask.Database\obj\Debug\Model.xml
+D:\CustomerTimesTask\CustomerTimesTask.Database\obj\Debug\refactor.xml
+D:\CustomerTimesTask\CustomerTimesTask.Database\obj\Debug\postdeploy.sql
+D:\CustomerTimesTask\CustomerTimesTask.Database\obj\Debug\predeploy.sql

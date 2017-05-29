@@ -15,7 +15,6 @@ D:\CustomerTimesTask\SubscriberMain\bin\Debug\GreenPipes.xml
 D:\CustomerTimesTask\SubscriberMain\bin\Debug\MassTransit.xml
 D:\CustomerTimesTask\SubscriberMain\bin\Debug\MassTransit.RabbitMqTransport.xml
 D:\CustomerTimesTask\SubscriberMain\bin\Debug\RabbitMQ.Client.xml
-D:\CustomerTimesTask\SubscriberMain\obj\Debug\SubscriberMain.csprojResolveAssemblyReference.cache
 D:\CustomerTimesTask\SubscriberMain\obj\Debug\SubscriberMain.exe
 D:\CustomerTimesTask\SubscriberMain\obj\Debug\SubscriberMain.pdb
 D:\CustomerTimesTask\SubscriberMain\bin\Debug\log4net.dll

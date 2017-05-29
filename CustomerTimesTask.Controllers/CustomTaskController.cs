@@ -2,6 +2,8 @@
 using System.Web.Http.Cors;
 using CustomerTimesTask.ApplicationServices;
 using CustomerTimesTask.DomainModel;
+using MassTransit;
+using SubscriberMain;
 
 namespace CustomerTimesTask.Controllers
 {
@@ -28,6 +30,14 @@ namespace CustomerTimesTask.Controllers
         [HttpGet, Route("api/task")]
         public IHttpActionResult GetCustomTasks()
         {
+            var bus = BusInitializer.CreateBus();
+            bus.StartAsync();
+            var myMessage = new MyMessage()
+            {
+                Value = "Test"
+            };
+
+            bus.Publish<MyMessage>(myMessage);
 
             var models = _customTaskService.GetList();
 

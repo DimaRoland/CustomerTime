@@ -104,7 +104,6 @@ D:\CustomerTimesTask\CustomerTimesTask.ApplicationServices\bin\Debug\Autofac.Int
 D:\CustomerTimesTask\CustomerTimesTask.ApplicationServices\bin\Debug\GreenPipes.xml
 D:\CustomerTimesTask\CustomerTimesTask.ApplicationServices\bin\Debug\log4net.xml
 D:\CustomerTimesTask\CustomerTimesTask.ApplicationServices\bin\Debug\Magnum.xml
-D:\CustomerTimesTask\CustomerTimesTask.ApplicationServices\bin\Debug\MassTransit.pdb
 D:\CustomerTimesTask\CustomerTimesTask.ApplicationServices\bin\Debug\MassTransit.xml
 D:\CustomerTimesTask\CustomerTimesTask.ApplicationServices\bin\Debug\MassTransit.Transports.RabbitMq.pdb
 D:\CustomerTimesTask\CustomerTimesTask.ApplicationServices\bin\Debug\MassTransit.Transports.RabbitMq.xml

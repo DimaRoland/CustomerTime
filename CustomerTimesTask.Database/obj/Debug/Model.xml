@@ -12,7 +12,7 @@
 		</CustomData>
 		<CustomData Category="Reference" Type="Assembly">
 			<Metadata Name="LogicalName" Value="CustomerTimesTask.Database.dll" />
-			<Metadata Name="FileName" Value="C:\USERS\DVAL\DOCUMENTS\VISUAL STUDIO 2015\PROJECTS\CUSTOMERTIMESTASK\CUSTOMERTIMESTASK.DATABASE\OBJ\DEBUG\CUSTOMERTIMESTASK.DATABASE.DLL" />
+			<Metadata Name="FileName" Value="D:\CUSTOMERTIMESTASK\CUSTOMERTIMESTASK.DATABASE\OBJ\DEBUG\CUSTOMERTIMESTASK.DATABASE.DLL" />
 			<Metadata Name="AssemblyName" Value="CustomerTimesTask.Database" />
 			<Metadata Name="PermissionSet" Value="SAFE" />
 			<Metadata Name="Owner" Value="" />
@@ -20,7 +20,7 @@
 			<Metadata Name="IsVisible" Value="True" />
 			<Metadata Name="IsModelAware" Value="True" />
 			<Metadata Name="SkipCreationIfEmpty" Value="True" />
-			<Metadata Name="AssemblySymbolsName" Value="C:\Users\dval\Documents\Visual Studio 2015\Projects\CustomerTimesTask\CustomerTimesTask.Database\obj\Debug\CustomerTimesTask.Database.pdb" />
+			<Metadata Name="AssemblySymbolsName" Value="D:\CustomerTimesTask\CustomerTimesTask.Database\obj\Debug\CustomerTimesTask.Database.pdb" />
 		</CustomData>
 		<CustomData Category="SqlCmdVariables" Type="SqlCmdVariable" />
 	</Header>
