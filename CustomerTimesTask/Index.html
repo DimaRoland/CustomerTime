@@ -82,8 +82,8 @@
                                              contentType: 'application/json; charset=utf-8',
                                              dataType: "json",
                                              async: false,
-                                             success: $(this).closest('tr').text($("#change").val())
-                                     });
+                                             success: $('#blogs').closest('tr').text($("#change").val())
+                                         });
                                      });
                     });
             });
@@ -120,22 +120,6 @@
         });
     }
 
-
-    function update(id) {
-        $.ajax({
-            type: 'PUT',
-            url: 'api/task/' + '?' + $.param({ id }),
-            data: JSON.stringify(
-                {
-                    "taskName": $("#Title").val(),
-                    "isTaskStart": true,
-                    "isTaskEnd": false
-                }),
-            contentType: 'application/json; charset=utf-8',
-            dataType: "json",
-            async: false
-        });
-    }
 
     $("#addd").on("click",
         function(e) {

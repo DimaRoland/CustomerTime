@@ -31,16 +31,16 @@ namespace CustomerTimesTask.Controllers
         #region methods
 
 
-        public async Task<IHttpActionResult> SendMes(string actin)
+        public async Task SendMes(string actin)
         {
             var addUserEndpoint = await _bus.GetSendEndpoint(new Uri("rabbitmq://localhost/AddUser1"));
-            await addUserEndpoint.Send<MyMessage>(new { Value = "Hello" });
-            return Ok();
+            await addUserEndpoint.Send<MyMessage>(new { Value = actin });
         }
 
         [HttpGet, Route("api/task")]
         public async Task<IHttpActionResult> GetCustomTasks()
         {
+            SendMes("Get");
             var models = _customTaskService.GetList();
 
             return Ok(models);
@@ -57,6 +57,7 @@ namespace CustomerTimesTask.Controllers
         [HttpPut, Route("api/task")]
         public IHttpActionResult UpdateCustomTask([FromBody] CustomTask customTask)
         {
+            SendMes("Edit");
             var model = _customTaskService.UpdateCustomTask(customTask);
 
             return Ok(model);
@@ -65,6 +66,7 @@ namespace CustomerTimesTask.Controllers
         [HttpPost, Route("api/task/post")]
         public IHttpActionResult AddCustomTask(CustomTask customTask)
         {
+            SendMes("Add");
             _customTaskService.AddCustomTask(customTask);
 
             return Ok(customTask);
@@ -73,6 +75,7 @@ namespace CustomerTimesTask.Controllers
         [HttpDelete, Route("api/task")]
         public void DeleteCustomTask([FromUri] int id)
         {
+            SendMes("Delete");
             _customTaskService.Delete(id);
         }
 

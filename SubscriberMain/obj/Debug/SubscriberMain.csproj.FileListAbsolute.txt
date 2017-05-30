@@ -48,3 +48,4 @@ D:\CustomerTimesTask\SubscriberMain\bin\Debug\RabbitMQ.Client.xml
 D:\CustomerTimesTask\SubscriberMain\bin\Debug\System.Diagnostics.DiagnosticSource.xml
 D:\CustomerTimesTask\SubscriberMain\obj\Debug\SubscriberMain.exe
 D:\CustomerTimesTask\SubscriberMain\obj\Debug\SubscriberMain.pdb
+D:\CustomerTimesTask\SubscriberMain\obj\Debug\SubscriberMain.csprojResolveAssemblyReference.cache
