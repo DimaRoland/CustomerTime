@@ -1,11 +1,14 @@
 ﻿using System.Net.Http.Formatting;
 using System.Web.Http;
 using Autofac;
+using Autofac.Extensions.DependencyInjection;
 using Autofac.Features.ResolveAnything;
 using Autofac.Integration.WebApi;
 using CustomerTimesTask.ApplicationServices;
 using CustomerTimesTask.EntityFramework;
 using CustomerTimesTask.Repositories;
+using MassTransit;
+using MassTransit.Util;
 using Newtonsoft.Json;
 using Newtonsoft.Json.Serialization;
 using Owin;
@@ -56,6 +59,8 @@ namespace CustomerTimesTask
             builder.RegisterSource(new AnyConcreteTypeNotAlreadyRegisteredSource());
 
             var container = builder.Build();
+            var bus = container.Resolve<IBusControl>();
+            var busHandle = TaskUtil.Await(() => bus.StartAsync());
             return container;
         }
     }
@@ -72,6 +77,20 @@ namespace CustomerTimesTask
                 .AsImplementedInterfaces()
                 .InstancePerLifetimeScope();
 
+            builder.Register(c =>
+            {
+                return Bus.Factory.CreateUsingRabbitMq(sbc =>
+                    sbc.Host("localhost", "/", h =>
+                    {
+                        h.Username("guest");
+                        h.Password("guest");
+                    })
+                );
+            })
+                .As<IBusControl>()
+                .As<IBus>()
+                .As<IPublishEndpoint>()
+                .SingleInstance();
             base.Load(builder);
         }
     }

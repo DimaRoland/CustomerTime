@@ -1,8 +1,11 @@
-﻿using System.Web.Http;
+﻿using System;
+using System.Threading.Tasks;
+using System.Web.Http;
 using System.Web.Http.Cors;
 using CustomerTimesTask.ApplicationServices;
 using CustomerTimesTask.DomainModel;
-//using static CustomerTimesTask.BusInitializer;
+using MassTransit;
+using SubscriberMain;
 
 namespace CustomerTimesTask.Controllers
 {
@@ -10,28 +13,34 @@ namespace CustomerTimesTask.Controllers
     public class CustomTaskController : ApiController
     {
         #region fields
-
+        private readonly IBus _bus;
         private readonly ICustomTaskService _customTaskService;
 
         #endregion fields
 
         #region constructors
 
-        public CustomTaskController(ICustomTaskService customTaskService)
+        public CustomTaskController(ICustomTaskService customTaskService, IBus bus)
         {
             _customTaskService = customTaskService;
+            _bus = bus;
         }
 
         #endregion constructors
 
         #region methods
 
-        [HttpGet, Route("api/task")]
-        public IHttpActionResult GetCustomTasks()
+
+        public async Task<IHttpActionResult> SendMes(string actin)
         {
-            //var bus = CreateBus("CustomerTimesTask.Controllers", x => { });
-            //var message = new SomethingHappenedMessage() { What = "Test", };
-            //bus.Publish<SomethingHappened>(message, x => { x.SetDeliveryMode(MassTransit.DeliveryMode.Persistent); });
+            var addUserEndpoint = await _bus.GetSendEndpoint(new Uri("rabbitmq://localhost/AddUser1"));
+            await addUserEndpoint.Send<MyMessage>(new { Value = "Hello" });
+            return Ok();
+        }
+
+        [HttpGet, Route("api/task")]
+        public async Task<IHttpActionResult> GetCustomTasks()
+        {
             var models = _customTaskService.GetList();
 
             return Ok(models);
