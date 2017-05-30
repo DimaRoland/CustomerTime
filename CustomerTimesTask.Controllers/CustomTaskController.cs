@@ -40,7 +40,7 @@ namespace CustomerTimesTask.Controllers
         [HttpGet, Route("api/task")]
         public async Task<IHttpActionResult> GetCustomTasks()
         {
-            SendMes("Get");
+            await SendMes("Get");
             var models = _customTaskService.GetList();
 
             return Ok(models);
@@ -55,27 +55,27 @@ namespace CustomerTimesTask.Controllers
         }
 
         [HttpPut, Route("api/task")]
-        public IHttpActionResult UpdateCustomTask([FromBody] CustomTask customTask)
+        public async Task<IHttpActionResult> UpdateCustomTask([FromBody] CustomTask customTask)
         {
-            SendMes("Edit");
+            await SendMes("Edit");
             var model = _customTaskService.UpdateCustomTask(customTask);
 
             return Ok(model);
         }
 
         [HttpPost, Route("api/task/post")]
-        public IHttpActionResult AddCustomTask(CustomTask customTask)
+        public async Task<IHttpActionResult> AddCustomTask(CustomTask customTask)
         {
-            SendMes("Add");
+            await SendMes("Add");
             _customTaskService.AddCustomTask(customTask);
 
             return Ok(customTask);
         }
 
         [HttpDelete, Route("api/task")]
-        public void DeleteCustomTask([FromUri] int id)
+        public async  Task DeleteCustomTask([FromUri] int id)
         {
-            SendMes("Delete");
+            await SendMes("Delete");
             _customTaskService.Delete(id);
         }
 

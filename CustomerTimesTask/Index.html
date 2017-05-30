@@ -82,7 +82,9 @@
                                              contentType: 'application/json; charset=utf-8',
                                              dataType: "json",
                                              async: false,
-                                             success: $('#blogs').closest('tr').text($("#change").val())
+                                             success: $(this).closest('tr').text($("#change").val())
+                                                 .append('<input type="button" id="del" value="Delete" />')
+                                                 .append('<input type="button" id="edit" value="Edit" />')
                                          });
                                      });
                     });
