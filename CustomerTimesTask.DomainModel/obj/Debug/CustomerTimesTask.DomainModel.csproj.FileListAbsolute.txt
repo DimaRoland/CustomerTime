@@ -99,6 +99,5 @@ D:\CustomerTimesTask\CustomerTimesTask.DomainModel\bin\Debug\System.Web.Razor.xm
 D:\CustomerTimesTask\CustomerTimesTask.DomainModel\bin\Debug\System.Web.WebPages.xml
 D:\CustomerTimesTask\CustomerTimesTask.DomainModel\bin\Debug\System.Web.WebPages.Deployment.xml
 D:\CustomerTimesTask\CustomerTimesTask.DomainModel\bin\Debug\System.Web.WebPages.Razor.xml
-D:\CustomerTimesTask\CustomerTimesTask.DomainModel\obj\Debug\CustomerTimesTask.DomainModel.csprojResolveAssemblyReference.cache
 D:\CustomerTimesTask\CustomerTimesTask.DomainModel\obj\Debug\CustomerTimesTask.DomainModel.dll
 D:\CustomerTimesTask\CustomerTimesTask.DomainModel\obj\Debug\CustomerTimesTask.DomainModel.pdb

@@ -77,7 +77,6 @@ D:\CustomerTimesTask\CustomerTimesTask.Controllers\bin\Debug\Autofac.Integration
 D:\CustomerTimesTask\CustomerTimesTask.Controllers\bin\Debug\CustomerTimesTask.ApplicationServices.dll
 D:\CustomerTimesTask\CustomerTimesTask.Controllers\bin\Debug\CustomerTimesTask.DomainModel.dll
 D:\CustomerTimesTask\CustomerTimesTask.Controllers\bin\Debug\GreenPipes.dll
-D:\CustomerTimesTask\CustomerTimesTask.Controllers\bin\Debug\MassTransit.dll
 D:\CustomerTimesTask\CustomerTimesTask.Controllers\bin\Debug\MassTransit.Log4NetIntegration.dll
 D:\CustomerTimesTask\CustomerTimesTask.Controllers\bin\Debug\Microsoft.Extensions.Configuration.Abstractions.dll
 D:\CustomerTimesTask\CustomerTimesTask.Controllers\bin\Debug\Microsoft.Extensions.Configuration.dll
@@ -94,7 +93,6 @@ D:\CustomerTimesTask\CustomerTimesTask.Controllers\bin\Debug\System.Web.Http.Cor
 D:\CustomerTimesTask\CustomerTimesTask.Controllers\bin\Debug\System.Web.Http.dll
 D:\CustomerTimesTask\CustomerTimesTask.Controllers\bin\Debug\System.Web.Mvc.dll
 D:\CustomerTimesTask\CustomerTimesTask.Controllers\bin\Debug\System.Web.Razor.dll
-D:\CustomerTimesTask\CustomerTimesTask.Controllers\bin\Debug\System.Web.WebPages.Administration.dll
 D:\CustomerTimesTask\CustomerTimesTask.Controllers\bin\Debug\System.Web.WebPages.Deployment.dll
 D:\CustomerTimesTask\CustomerTimesTask.Controllers\bin\Debug\System.Web.WebPages.Razor.dll
 D:\CustomerTimesTask\CustomerTimesTask.Controllers\bin\Debug\CustomerTimesTask.Repositories.dll
@@ -108,8 +106,6 @@ D:\CustomerTimesTask\CustomerTimesTask.Controllers\bin\Debug\Autofac.Configurati
 D:\CustomerTimesTask\CustomerTimesTask.Controllers\bin\Debug\Autofac.Integration.Mvc.xml
 D:\CustomerTimesTask\CustomerTimesTask.Controllers\bin\Debug\Autofac.Integration.WebApi.xml
 D:\CustomerTimesTask\CustomerTimesTask.Controllers\bin\Debug\GreenPipes.xml
-D:\CustomerTimesTask\CustomerTimesTask.Controllers\bin\Debug\MassTransit.pdb
-D:\CustomerTimesTask\CustomerTimesTask.Controllers\bin\Debug\MassTransit.xml
 D:\CustomerTimesTask\CustomerTimesTask.Controllers\bin\Debug\MassTransit.Log4NetIntegration.xml
 D:\CustomerTimesTask\CustomerTimesTask.Controllers\bin\Debug\Microsoft.Extensions.Configuration.xml
 D:\CustomerTimesTask\CustomerTimesTask.Controllers\bin\Debug\Microsoft.Extensions.Configuration.Abstractions.xml
@@ -122,7 +118,6 @@ D:\CustomerTimesTask\CustomerTimesTask.Controllers\bin\Debug\System.Web.Http.xml
 D:\CustomerTimesTask\CustomerTimesTask.Controllers\bin\Debug\System.Web.Http.Cors.xml
 D:\CustomerTimesTask\CustomerTimesTask.Controllers\bin\Debug\System.Web.Mvc.xml
 D:\CustomerTimesTask\CustomerTimesTask.Controllers\bin\Debug\System.Web.Razor.xml
-D:\CustomerTimesTask\CustomerTimesTask.Controllers\bin\Debug\System.Web.WebPages.Administration.xml
 D:\CustomerTimesTask\CustomerTimesTask.Controllers\bin\Debug\System.Web.WebPages.Deployment.xml
 D:\CustomerTimesTask\CustomerTimesTask.Controllers\bin\Debug\System.Web.WebPages.Razor.xml
 D:\CustomerTimesTask\CustomerTimesTask.Controllers\bin\Debug\CustomerTimesTask.Repositories.pdb

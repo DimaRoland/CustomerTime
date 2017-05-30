@@ -102,12 +102,6 @@
     <None Include="App.config" />
     <None Include="packages.config" />
   </ItemGroup>
-  <ItemGroup>
-    <ProjectReference Include="..\CustomerTimesTask\CustomerTimesTask.Host.csproj">
-      <Project>{DC2457E9-1548-4FC1-8982-96ABE241FAF2}</Project>
-      <Name>CustomerTimesTask.Host</Name>
-    </ProjectReference>
-  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
        Other similar extension points exist, see Microsoft.Common.targets.
